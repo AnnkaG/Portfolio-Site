@@ -1,0 +1,315 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: "Lato", "Arial", sans-serif;
+    font-weight: 300;
+    text-rendering: optimizeLegibility;
+    font-size: 15px;
+}
+
+body {
+    width: 100%;
+    display: flex;
+    background-color: white;
+}
+
+img {
+    width:100%;
+}
+
+.container {
+    display:flex;
+    flex-wrap: wrap;
+    max-width: 500px;
+}
+
+
+/* --------------------- TOP SITE CONTAINER ---------------------*/
+.site-top {
+    position: relative;
+    height: 150px;
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 10px 0px 0px 10px;
+    padding-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+.logo_container {
+    position: relative;
+    float:left;
+    width:30%;
+   
+    justify-content: center;
+    vertical-align: middle;
+}
+.logo {
+    width:80px;
+    
+}
+ .personal_info {
+    position: relative;
+    display: block;
+    width:70%;
+    height: 100%;
+    
+}
+
+.name, .title {
+    text-align: right;
+       margin-right: 5px;
+}
+
+.name {
+ 
+    padding-top: 80px;
+    vertical-align: bottom;
+    color:#083b66;
+    font-size: 1.5em;
+      
+}
+
+.title {
+    color: #4c7837;
+    font-size: 0.8em;
+      
+}
+
+ /* --------------------- COLOURS CONTAINER ---------------------*/  
+
+.main_container {
+    width: 100%;
+
+}
+
+.colors_container {
+    width: 100%;
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    font-size: 0.7em;
+      
+}
+
+.square {
+    width: 1em;
+    height: 1em;
+    float:left;
+    margin-right: 5px;
+ }   
+
+.colors {
+    width: 30%;
+    font-size: 1.5em;
+    display: block;
+    float: left;
+ 
+}
+
+.one {
+    background-color: #4c7837;
+}
+
+.two {
+    background-color: #083b66;
+}
+
+.three {
+    background-color: #7e7e7e;
+}
+
+.first {
+    color: #4c7837;
+}
+
+.second {
+    color: #083b66;
+}
+
+.third {
+    color: #7e7e7e;
+}
+
+/* --------------------- MAIN PHOTO ---------------------*/
+
+.main_photo {
+    width: 100%;
+    margin-bottom: 30px;
+
+    padding-top: 20px;
+    opacity: 0.9;
+    height: 170px;
+    overflow: hidden;
+  
+}
+
+/* --------------------- PORTFOLIO PHOTOS ---------------------*/
+
+.projects_photo {
+    border-top: 1px solid #7e7e7e;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+.tradingCard, .portfolioSite, .p_three, .p_four, .p_five, .p_six {
+    margin-top:10px;
+    width: 80%;
+}
+
+.photo-first, .photo-second, .photo-third, .photo-fourth, .photo-fifth, .photo-sixth {
+    margin-bottom:10px;
+    height: 70%;
+    
+}
+
+.photo_title {
+    color: #7e7e7e;
+    font-weight: 500;
+    justify-content: center;
+    text-align:center; 
+}
+
+.my_portfolio {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #7e7e7e;
+    font-weight: 500;
+    font-size: 0.8em;
+    text-align:center; 
+    width:100%;
+    letter-spacing: 2px;
+}
+
+/* --------------------- MEDIA QUERIES ---------------------*/
+/* ---------------------------------------------------------*/
+
+
+/* --------------------- iPAD ------------------------------*/
+@media screen and (min-width: 550px){
+.container {
+    max-width:800px;
+    margin-right: auto;
+    margin-left: auto;
+}
+    
+.site-top {
+   margin: 10px 0px 0px 10px;
+   width: 100%;
+   height: 160px;
+   
+}   
+  
+.logo {
+   width:90px;
+   
+}
+    
+.name {
+   font-size: 2em;
+      
+}
+
+.title {
+    font-size: 1.2em;
+}
+    
+.colors {
+    width:100%;
+    display: inline;
+    margin-left: 30px;
+    font-size: 1.6em;
+    align-items: center;
+    vertical-align: middle;
+    }    
+    
+.square {
+    width: 1em;
+    height: 1em;
+    float: left;
+    margin-left: 30px;
+    
+ }   
+    
+ .main_container {
+   display: flex;
+   flex-wrap: wrap;
+
+}
+.main_photo {
+   width: 100%;
+   height: 250px;
+    
+}
+    
+.projects_photo {
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    
+}
+.project {
+    margin: 10px;
+    width: 45%;
+  }     
+    
+.my_portfolio {
+  font-size: 1em;
+}      
+
+.tradingCard, .portfolioSite, .p_three, .p_four, .p_five, .p_six {
+    width: 35%;
+} 
+    
+ 
+}
+        
+/* --------------------- LapTop ---------------------------*/
+
+@media screen and (min-width: 900px) {
+    
+.container {
+   max-width:1140px;
+   margin-left: auto;
+   margin-right: auto;
+}
+    
+.colors {
+    width:100%;
+    display: inline;
+    margin-left: 30px;
+    font-size: 2em;
+    padding-left: 30px;
+}    
+    
+ 
+.tradingCard, .portfolioSite, .p_three, .p_four, .p_five, .p_six  {
+    width: 30%;
+}
+    
+    .logo {
+    width:100px;
+   
+}
+
+.name {
+   font-size: 3em;
+      
+}
+
+.title {
+   font-size: 1.5em;
+}
+.my_portfolio {
+  font-size: 1.2em;
+}      
+}  
